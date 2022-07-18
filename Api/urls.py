@@ -9,7 +9,7 @@ urlpatterns = [
     path('filter-price/<int:start>-<int:finish>/',PriceFilter),
     path('get-product/', Get_Product),
     path('create-wish-list/<int:pk>',Wishlist_Funk),
-    path('one-product/',Get_Oneproduct),
+    path('one-product/<int:pk>',Get_Oneproduct),
     path('create_reviews/<int:pk>', Create_Reviews),
     path('blog/<int:pk>/',blog),
     path('blog-detail/',blog_detail),

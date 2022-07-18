@@ -179,7 +179,7 @@ def Wishlist_Funk(request,pk):
 @api_view(['GET'])
 def Get_Oneproduct(r,pk):
     a = Product.objects.filter(id=pk)
-    ser = ProductSerializer(a,many=True)
+    ser = ProductSerializer(a)
     return Response(ser.data)
 
 
